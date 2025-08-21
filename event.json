@@ -1,20 +1,42 @@
 {
-  "Records": [
-    {
-      "messageId": "19dd0b57-b21e-4ac1-bd88-01bbb068cb78",
-      "receiptHandle": "MessageReceiptHandle",
-      "body": "Hello from SQS!",
-      "attributes": {
-        "ApproximateReceiveCount": "1",
-        "SentTimestamp": "1523232000000",
-        "SenderId": "123456789012",
-        "ApproximateFirstReceiveTimestamp": "1523232000001"
-      },
-      "messageAttributes": {},
-      "md5OfBody": "7b270e59b47ff90a553787216d55d91d",
-      "eventSource": "aws:sqs",
-      "eventSourceARN": "arn:aws:sqs:us-west-2:123456789012:MyQueue",
-      "awsRegion": "us-west-2"
-    }
-  ]
+  "resource": "/upload",
+  "path": "/upload",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "*/*",
+    "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+    "Host": "api.example.com",
+    "User-Agent": "curl/7.68.0"
+  },
+  "multiValueHeaders": {
+    "Accept": ["*/*"],
+    "Content-Type": ["multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW"],
+    "Host": ["api.example.com"],
+    "User-Agent": ["curl/7.68.0"]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "123456",
+    "resourcePath": "/upload",
+    "httpMethod": "POST",
+    "extendedRequestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
+    "requestTime": "25/Aug/2025:12:34:56 +0000",
+    "path": "/dev/upload",
+    "accountId": "123456789012",
+    "protocol": "HTTP/1.1",
+    "stage": "dev",
+    "domainPrefix": "1234567890",
+    "requestTimeEpoch": 1428582896000,
+    "requestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
+    "identity": {
+      "sourceIp": "127.0.0.1"
+    },
+    "domainName": "1234567890.execute-api.us-east-1.amazonaws.com",
+    "apiId": "1234567890"
+  },
+  "body": "LS0tLS1XZWJLaXRGb3JtQm91bmRhcnk3TUE0WVd4a1RyWnUwZ1cNCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iZmlsZSI7IGZpbGVuYW1lPSJ0ZXN0X2ltYWdlLnBuZyINCkNvbnRlbnQtVHlwZTogaW1hZ2UvcG5nDQoNCmlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFCQUFBQUFRQ0FZQUFBQWY4LzloQUFBQUJHZEJUVUVBQUxHUEMveGhCUUFBQUNCallJRkNRQUFBQ0hnMGRNWHNNNlBLZ0FBdVh5UnIrTGVhMUVCS1JJQ0JJSkJ5Z0pCaWdrQnFocXJRUzZQY0ZSOXhoRDQ4TUcwWXBGUlFINW1qQkFnQUF2MERHR0JnYUF3TG14b2FQZzAyUHJGUUNBeWJEQlU0QnEyOG1wRjQ5K2tnRUFBZ1NnRmtBWVFBQUFlOGY2Rk0yQUZBQjZ2RFA3NGpBQUFBQVNVVk9SSzVDWUlJPQ0KLS0tLS1XZWJLaXRGb3JtQm91bmRhcnk3TUE0WVd4a1RyWnUwZ1ctLQ==",
+  "isBase64Encoded": true
 }
